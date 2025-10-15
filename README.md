@@ -1,70 +1,243 @@
-# Getting Started with Create React App
+# HICONS Services Limited - Official Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![HICONS Services Limited](https://img.shields.io/badge/Built%20with-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-## Available Scripts
+A modern, responsive website for HICONS Services Limited - a leading construction company in Kenya specializing in water infrastructure, road construction, building development, and drainage systems.
 
-In the project directory, you can run:
+## 🌟 Features
+
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX** - Clean, professional interface with smooth animations
+- **Project Portfolio** - Filterable project gallery with detailed project information
+- **Interactive Navigation** - Click-based dropdown menus with smooth transitions
+- **Contact System** - Comprehensive contact form with validation
+- **About Section** - Detailed company information including mission, vision, and leadership team
+- **Performance Optimized** - Fast loading times and smooth scrolling
+
+## 🚀 Tech Stack
+
+- **Frontend Framework:** React 18
+- **Routing:** React Router DOM v6
+- **Styling:** Custom CSS with modern design patterns
+- **Build Tool:** Create React App
+- **Version Control:** Git & GitHub
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (v14.0.0 or higher)
+- **npm** (v6.0.0 or higher) or **yarn**
+- **Git**
+
+## 🔧 Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Stephen2Kim/hicons-website.git
+cd hicons-website
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Start the development server**
+
+```bash
+npm start
+# or
+yarn start
+```
+
+The application will open at [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+hicons-website/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   └── images/          # Project images and logos
+│   ├── components/
+│   │   ├── Navbar.jsx       # Navigation component
+│   │   ├── Navbar.css
+│   │   ├── ScrollToTop.jsx  # Scroll restoration utility
+│   │   └── Footer.jsx       # Footer component (if applicable)
+│   ├── pages/
+│   │   ├── Home.jsx         # Landing page
+│   │   ├── Home.css
+│   │   ├── About.jsx        # About page with company info
+│   │   ├── About.css
+│   │   ├── Projects.jsx     # Project portfolio
+│   │   ├── Projects.css
+│   │   ├── Contact.jsx      # Contact page with form
+│   │   └── Contact.css
+│   ├── App.js               # Main app component with routing
+│   ├── index.js             # Application entry point
+│   └── index.css            # Global styles
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## 🎨 Key Features Breakdown
+
+### Home Page
+- Hero section with compelling background imagery
+- Company introduction and history
+- Project showcase with high-quality images
+- Service overview
+- Call-to-action section with quick stats
+- Multiple contact methods
+
+### About Page
+- Comprehensive company profile
+- Mission and vision statements
+- Leadership team section
+- Core values and services
+- Smooth scroll navigation to sections
+
+### Projects Page
+- Filterable project gallery (All, Water, Roads, Buildings, Drainage)
+- Project cards with hover effects
+- Detailed project modal with specifications
+- Sample project data for layout demonstration
+- Call-to-action section
+
+### Contact Page
+- Multi-field contact form with validation
+- Contact information cards
+- Service area information
+- FAQ section
+- Map integration placeholder
+- Social media links
+
+## 🛠️ Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder
 
 ### `npm run eject`
+**Note: this is a one-way operation. Once you eject, you can't go back!**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌐 Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deploy to Vercel (Recommended)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Install Vercel CLI**
+```bash
+npm install -g vercel
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Deploy**
+```bash
+vercel
+```
 
-## Learn More
+3. **Deploy to Production**
+```bash
+vercel --prod
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Deploy to Netlify
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Install Netlify CLI**
+```bash
+npm install -g netlify-cli
+```
 
-### Code Splitting
+2. **Build and Deploy**
+```bash
+npm run build
+netlify deploy --prod --dir=build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploy to GitHub Pages
 
-### Analyzing the Bundle Size
+1. **Install gh-pages**
+```bash
+npm install --save-dev gh-pages
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Add to package.json**
+```json
+"homepage": "https://Stephen2Kim.github.io/hicons-website",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
 
-### Making a Progressive Web App
+3. **Deploy**
+```bash
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔄 Future Enhancements
 
-### Advanced Configuration
+- [ ] Backend integration for contact form
+- [ ] Real project data and images
+- [ ] Google Maps integration
+- [ ] Blog/News section
+- [ ] Client testimonials
+- [ ] Image gallery with lightbox
+- [ ] Multi-language support
+- [ ] Admin dashboard for content management
+- [ ] SEO optimization
+- [ ] Analytics integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🐛 Known Issues
 
-### Deployment
+- Contact form currently logs to console (backend integration pending)
+- Project images are placeholders (awaiting real project photos)
+- Google Maps integration is placeholder (needs actual location embed)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+This is a private project for HICONS Services Limited. For any suggestions or issues, please contact the development team.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is proprietary and confidential. © 2024 HICONS Services Limited. All rights reserved.
+
+## 👨‍💻 Developer
+
+**Stephen Kim**
+- GitHub: [@Stephen2Kim](https://github.com/Stephen2Kim)
+
+## 📞 Support
+
+For technical support or inquiries about HICONS Services Limited:
+
+- **Email:** info@hiconsservices.com
+- **Phone:** +254 712 345 678
+- **Location:** Nairobi, Kenya
+
+## 🙏 Acknowledgments
+
+- React Team for the amazing framework
+- Create React App for the build tooling
+- The open-source community for inspiration and resources
+
+---
+
+**Built with ❤️ for HICONS Services Limited**
+
+*Established 2016 | Building Kenya's Future*
